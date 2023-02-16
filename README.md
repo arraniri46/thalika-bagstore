@@ -15,3 +15,5 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 # Screenshot
 
 ![1](https://user-images.githubusercontent.com/24485827/219393234-3b9af606-d79e-47a7-9733-838a48191879.JPG)
+
+![2](https://user-images.githubusercontent.com/24485827/219393810-bc2dcad3-0600-4349-b7d9-674a34b94308.JPG)
