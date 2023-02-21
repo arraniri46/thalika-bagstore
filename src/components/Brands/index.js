@@ -15,7 +15,13 @@ const Brands = () => {
     <>
       <div className="flex items-center bg-textlight h-36 justify-between gap-x-2 mt-8 px-6">
         {brands.map((brand, index) => (
-          <Image key={index} src={brand.img} width={120} height={100}></Image>
+          <Image
+            key={index}
+            src={brand.img}
+            width={100}
+            height={80}
+            alt="brands-logo"
+          ></Image>
         ))}
       </div>
     </>

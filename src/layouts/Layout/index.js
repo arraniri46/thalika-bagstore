@@ -1,5 +1,6 @@
 import Header from "@/layouts/Header";
 import Head from "next/head";
+import Footer from "../Footer";
 
 const Layout = (props) => {
   return (
@@ -13,6 +14,7 @@ const Layout = (props) => {
       <main className="flex flex-col items-center bg-textlight">
         <Header />
         {props.children}
+        <Footer />
       </main>
     </>
   );

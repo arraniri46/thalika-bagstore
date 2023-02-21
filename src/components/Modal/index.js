@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Button from "../Button";
 
-const Modal = ({ open }) => {
+const Modal = ({ open, dataFromChild }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
@@ -13,11 +13,15 @@ const Modal = ({ open }) => {
       {isOpen && (
         <div className="absolute w-full h-screen bg-black/60 z-10 top-0 left-0">
           <div className="flex flex-col absolute w-96 h-60 border justify-center items-center  bg-primary top-[30%] left-[40%]">
-            <div
-              className="absolute top-2 right-4"
-              onClick={() => setIsOpen(!isOpen)}
-            >
-              <Button variant="fill" className="px-3 py-1">
+            <div className="absolute top-2 right-4">
+              <Button
+                variant="fill"
+                className="px-3 py-1"
+                onClick={() => {
+                  setIsOpen(!isOpen);
+                  dataFromChild();
+                }}
+              >
                 X
               </Button>
             </div>
