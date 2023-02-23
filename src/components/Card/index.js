@@ -1,6 +1,7 @@
 import { useState } from "react";
 import DetailProduct from "../DetailProduct";
 import DetailProductModal from "../DetailProductModal";
+import Rating from "../Rating";
 
 const Card = ({ products }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -41,7 +42,7 @@ const Card = ({ products }) => {
                 <div className="flex bg-secondary w-max px-2 py-1 mt-4 rounded">
                   <p className="text-xs text-textlight">Stok Tersedia</p>
                 </div>
-                <div className="mt-3">{/* <Rating /> */}</div>
+                <div className="mt-2">{/* <Rating /> */}</div>
               </div>
             </a>
           ))}

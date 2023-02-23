@@ -5,7 +5,7 @@ import Card from "../Card";
 const NewArrivals = () => {
   return (
     <>
-      <div className="flex flex-col bg-textlight px-8 py-4">
+      <div className="flex flex-col bg-textlight px-6 md:px-0 py-4">
         <h2 className="text-2xl font-bold text-textdark">New Arrivals</h2>
         <hr />
         <div className="flex justify-center mt-10">

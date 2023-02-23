@@ -30,8 +30,8 @@ const Hero = () => {
           ></img>
         </div>
       </div>
-      <div className="flex w-full justify-center items-center bg-secondary shadow-lg h-20 my-4">
-        <p className="text-2xl font-normal text-textlight">
+      <div className="flex w-full justify-center items-center bg-secondary shadow-lg h-12 md:h-20 my-4">
+        <p className="text-sm md:text-2xl font-normal text-textlight text-center">
           'Tas Wanita untuk Setiap Moment dan Kegiatan'
         </p>
       </div>

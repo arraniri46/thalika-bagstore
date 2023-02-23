@@ -7,8 +7,8 @@ const Footer = () => {
         <div className="container mx-auto h-full self-center max-w-6xl relative">
           <div className="flex justify-around py-6">
             <div className="flex flex-col">
-              <p>Pembayaran</p>
-              <ul className="flex flex-col gap-y-4 mt-4">
+              <p className="text-sm md:text-base">Pembayaran</p>
+              <ul className="flex flex-col gap-y-2 md:gap-y-4 mt-4">
                 <li>
                   <Image
                     src="/images/bca-logo.png"
@@ -36,8 +36,8 @@ const Footer = () => {
               </ul>
             </div>
             <div className="flex flex-col">
-              <p>Pengiriman</p>
-              <ul className="flex flex-col gap-y-4 mt-4">
+              <p className="text-sm md:text-base">Pengiriman</p>
+              <ul className="flex flex-col gap-y-2 md:gap-y-4 mt-4">
                 <li>
                   <Image
                     src="/images/jne-logo.png"
@@ -57,7 +57,7 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <ul className="flex flex-col gap-y-3">
+              <ul className="flex flex-col gap-y-2 md:gap-y-3 text-sm md:text-base">
                 <li className="text-semibold hover:underline">
                   <a href="#">About</a>
                 </li>

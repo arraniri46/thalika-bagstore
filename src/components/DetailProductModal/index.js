@@ -2,6 +2,8 @@ import { Dialog, Transition } from "@headlessui/react";
 import Image from "next/image";
 import { Fragment, useEffect, useState } from "react";
 import Button from "../Button";
+import GalleryCarousel from "../GalleryCarousel";
+import Rating from "../Rating";
 
 export default function DetailProductModal({ isOpen, dataProduct, dataChild }) {
   const [open, setOpen] = useState(true);
@@ -32,7 +34,7 @@ export default function DetailProductModal({ isOpen, dataProduct, dataChild }) {
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <div className="fixed inset-0 bg-black bg-opacity-25" />
+            <div className="fixed inset-0 bg-black bg-opacity-60" />
           </Transition.Child>
 
           <div className="fixed inset-0 overflow-y-auto">
@@ -46,7 +48,7 @@ export default function DetailProductModal({ isOpen, dataProduct, dataChild }) {
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="container max-w-6xl transform overflow-hidden rounded-2xl bg-white px-6 pt-4 pb-12 text-left align-middle shadow-xl transition-all">
+                <Dialog.Panel className="container max-w-6xl transform overflow-hidden rounded-lg bg-white px-6 pt-4 pb-12 text-left align-middle shadow-xl transition-all">
                   <div className="flex justify-between">
                     <Dialog.Title
                       as="h3"
@@ -67,31 +69,36 @@ export default function DetailProductModal({ isOpen, dataProduct, dataChild }) {
                     </Button>
                   </div>
                   <div className="mt-2 flex flex-col md:flex-row gap-x-12">
-                    <Image
+                    {/* <Image
                       src={dataProduct.img}
                       width={680}
                       height={200}
                       alt="image"
                       className="rounded-md"
-                    ></Image>
-                    <div className="flex flex-col w-full md:w-2/6 p-6 md:p-0">
+                    ></Image> */}
+                    <div className="w-full md:w-4/6">
+                      <GalleryCarousel />
+                    </div>
+                    <div className="flex flex-col w-full md:w-2/6 p-2 md:p-0 -mt-12 md:mt-0">
                       <div className="flex flex-col">
                         <h3 className="text-2xl font-bold ">
                           {dataProduct.name}
                         </h3>
-                        <h4 className="mt-8 font-semibold">Description</h4>
+                        <Rating />
+                        <h4 className="mt-6 mb-2 font-bold">Description</h4>
                         <p className=" ">
                           Lorem ipsum dolor sit amet, consectetur adipisicing
                           elit. Rerum dolores cum perferendis quod enim
                           distinctio porro sit repudiandae at deleniti!
                         </p>
                       </div>
-                      <div className="flex flex-col justify-between mt-12 gap-y-2">
-                        <p className="font-bold text-lg">Color</p>
-                        <div className="flex gap-x-2">
-                          <span className="w-6 h-6 bg-red-600 rounded-full hover:cursor-pointer"></span>
-                          <span className="w-6 h-6 bg-blue-600 rounded-full hover:cursor-pointer"></span>
-                          <span className="w-6 h-6 bg-black rounded-full hover:cursor-pointer"></span>
+                      <div className="flex flex-col justify-between mt-4 md:mt-12 gap-y-2">
+                        <p className="font-bold">Color</p>
+                        <div className="flex gap-x-2 mb-6">
+                          <span className="w-8 h-8 bg-black rounded-full hover:cursor-pointer"></span>
+                          <span className="w-8 h-8 bg-orange-800 rounded-full hover:cursor-pointer"></span>
+                          <span className="w-8 h-8 bg-red-300 rounded-full hover:cursor-pointer"></span>
+                          <span className="w-8 h-8 bg-pink-600 rounded-full hover:cursor-pointer"></span>
                         </div>
                       </div>
                       <div className="flex flex-col w-full h-full justify-end items-end">
@@ -112,7 +119,7 @@ export default function DetailProductModal({ isOpen, dataProduct, dataChild }) {
                               +
                             </button>
                           </div>
-                          <p className="text-3xl font-extrabold text-textdark">
+                          <p className="text-2xl md:text-3xl font-extrabold text-textdark">
                             Rp
                             {(dataProduct.price * countItem).toLocaleString(
                               "id-ID"

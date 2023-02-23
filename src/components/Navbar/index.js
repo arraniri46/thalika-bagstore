@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import Button from "../Button";
-import Modal from "../Modal";
+import LoginModal from "../Modal/LoginModal";
 import SearchBar from "../SearchBar";
 
 const Navbar = () => {
@@ -24,13 +24,13 @@ const Navbar = () => {
             <a href="/">Bagstore</a>
           </span>
         </div>
-        <div>
+        <div className="hidden md:flex">
           <ul className="flex gap-x-6 text-lg font-medium text-textlight ">
             <li className="hover:underline hover:text-terniary">
-              <Link href="/#new-arrivals">New Arrivals</Link>
+              <Link href="/new-arrivals">New Arrivals</Link>
             </li>
             <li className="hover:underline hover:text-terniary">
-              <Link href="/#featured-items">Featured Items</Link>
+              <Link href="/featured-items">Featured Items</Link>
             </li>
             <li className="hover:text-terniary relative gap-x-2">
               <p
@@ -64,21 +64,23 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <div>
+        <div className="hidden md:flex">
           <SearchBar />
         </div>
         <div className="flex gap-x-6">
-          <Button className="font-semibold relative">
-            <Image
-              src="/cart.svg"
-              width={36}
-              height={36}
-              alt="cart-icon"
-            ></Image>
-            <span className="absolute bottom-0 right-0 bg-textdark text-textlight text-xs px-1 rounded-full">
-              4
-            </span>
-          </Button>
+          <Link href="/cart" className="font-semibold relative">
+            <Button className="flex">
+              <Image
+                src="/cart.svg"
+                width={36}
+                height={36}
+                alt="cart-icon"
+              ></Image>
+              <span className="absolute bottom-0 right-0 bg-textdark text-textlight text-xs px-1 rounded-full">
+                4
+              </span>
+            </Button>
+          </Link>
 
           <Button className="font-semibold" onClick={() => setIsOpen(!isOpen)}>
             <Image
@@ -89,7 +91,7 @@ const Navbar = () => {
             ></Image>
           </Button>
         </div>
-        <Modal open={isOpen} dataFromChild={dataFromChild} />
+        <LoginModal open={isOpen} dataFromChild={dataFromChild} />
       </nav>
     </>
   );
