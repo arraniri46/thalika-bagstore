@@ -3,7 +3,7 @@ import DetailProduct from "../DetailProduct";
 import DetailProductModal from "../DetailProductModal";
 import Rating from "../Rating";
 
-const Card = ({ products }) => {
+const ProductCard = ({ products }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState(null);
 
@@ -25,9 +25,9 @@ const Card = ({ products }) => {
               key={product.id}
               onClick={() => handleProductClick(product)}
               // href={`/${product.name.toLowerCase().split(" ").join("-")}`}
-              className="group shadow-lg bg-textlight aspect-square hover:cursor-pointer"
+              className="group shadow-sm rounded-xl bg-textlight aspect-square hover:cursor-pointer"
             >
-              <div className="aspect-w-1 aspect-h-1 w-full overflow-hidden bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
+              <div className="aspect-w-1 aspect-h-1 w-full overflow-hidden bg-gray-200 xl:aspect-w-7 xl:aspect-h-8 rounded-xl">
                 <img
                   src={product.img}
                   alt="image"
@@ -61,4 +61,4 @@ const Card = ({ products }) => {
   );
 };
 
-export default Card;
+export default ProductCard;

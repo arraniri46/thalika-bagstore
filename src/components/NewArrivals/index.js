@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { products } from "data/products";
-import Card from "../Card";
+import Card from "../ProductCard";
 
 const NewArrivals = () => {
   return (

@@ -1,7 +1,7 @@
 import Modal from "@/components/Modal";
 import Navbar from "@/components/Navbar";
 
-const Header = () => {
+const Header = ({}) => {
   return (
     <>
       <Navbar />

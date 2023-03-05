@@ -1,5 +1,6 @@
 import Header from "@/layouts/Header";
 import Head from "next/head";
+import { useEffect, useState } from "react";
 import Footer from "../Footer";
 
 const Layout = (props) => {

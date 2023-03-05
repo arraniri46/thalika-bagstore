@@ -43,12 +43,7 @@ export default function LoginModal({ open, dataFromChild }) {
                   leaveFrom="opacity-100 scale-100"
                   leaveTo="opacity-0 scale-95"
                 >
-                  <Dialog.Panel className="relative container max-w-xl transform overflow-hidden rounded-md bg-textlight px-6 md:px-20 pt-10 pb-14 text-left align-middle shadow-xl transition-all">
-                    <img
-                      src="/bg-pattern.svg"
-                      alt=""
-                      className="absolute inset-0 -z-10 w-full h-full object-cover"
-                    />
+                  <Dialog.Panel className="relative container max-w-xl transform overflow-hidden rounded-md bg-textlight px-8 md:px-32 pt-10 pb-14 text-left align-middle shadow-xl transition-all">
                     <Dialog.Title
                       as="h3"
                       className="text-sm font-medium leading-6 text-gray-600"
@@ -93,7 +88,7 @@ export default function LoginModal({ open, dataFromChild }) {
                         />
                       </div>
                       <Button
-                        variant="fill"
+                        variant="filldark"
                         className="px-4 py-2 w-full bg-secondary"
                       >
                         Login

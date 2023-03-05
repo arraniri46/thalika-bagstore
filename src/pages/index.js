@@ -6,7 +6,7 @@ import Layout from "@/layouts/Layout";
 export default function Home() {
   return (
     <>
-      <Layout title="Thalika Bagstore - Dapatkan Koleksi Tas Impian Anda">
+      <Layout title="Thalika Bagstore | Dapatkan Koleksi Tas Impian Anda">
         <div className="container mx-auto h-full self-center mt-4 max-w-6xl">
           <Hero />
           <NewArrivals />

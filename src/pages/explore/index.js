@@ -1,6 +1,6 @@
 import Layout from "@/layouts/Layout";
 import Link from "next/link";
-import Card from "@/components/Card";
+import ProductCard from "@/components/ProductCard";
 
 import { useSelector } from "react-redux";
 import { useState } from "react";
@@ -22,7 +22,7 @@ const Explore = () => {
                 <p className="text-lg font-semibold text-textdark">
                   Showing results...
                 </p>
-                <Card products={dataProducts} />
+                <ProductCard products={dataProducts} />
               </div>
             </div>
             <div className="bg-primary w-full flex"></div>

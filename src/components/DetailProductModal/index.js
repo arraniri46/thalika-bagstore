@@ -57,7 +57,7 @@ export default function DetailProductModal({ isOpen, dataProduct, dataChild }) {
                       Detail Product
                     </Dialog.Title>
                     <Button
-                      variant="fill"
+                      variant="filldark"
                       className="px-3 py-1"
                       onClick={() => {
                         setOpen(false);
@@ -133,7 +133,7 @@ export default function DetailProductModal({ isOpen, dataProduct, dataChild }) {
                           >
                             Add to cart
                           </Button>
-                          <Button variant="fill" className="py-2 px-4">
+                          <Button variant="filldark" className="py-2 px-4">
                             Checkout
                           </Button>
                         </div>

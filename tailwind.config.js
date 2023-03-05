@@ -11,7 +11,7 @@ module.exports = {
         secondary: "#6d597a",
         terniary: "#e56b6f",
         textlight: "#FAF9F6",
-        textdark: "#001219",
+        textdark: "#2b2d42",
       },
     },
   },
