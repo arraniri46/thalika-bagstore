@@ -15,15 +15,15 @@ const Login = () => {
       </Head>
       <div className="flex flex-col w-full justify-center">
         <div className="md:absolute text-lg md:text-3xl font-bold text-textdark top-32 self-center">
-          <span className="font-bold text-2xl text-textdark">
+          <span className="font-bold text-textdark">
             <a href="/">Thalika</a>
           </span>
-          <span className="font-light text-2xl text-primary">
+          <span className="font-light text-primary">
             <a href="/">Bagstore</a>
           </span>
         </div>
         <div className="container mx-auto flex flex-col md:flex-row w-full max-w-6xl h-max md:mt-52 items-center gap-y-2 md:gap-x-12">
-          <div className="flex w-full md:w-1/2 justify-center p-8 md:rounded-xl">
+          <div className="flex w-full md:w-1/2 justify-center p-12 md:p-6 md:rounded-xl">
             <Image
               src="./login-illustration.svg"
               width={500}

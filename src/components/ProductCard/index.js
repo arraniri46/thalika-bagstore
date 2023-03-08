@@ -1,5 +1,4 @@
 import { useState } from "react";
-import DetailProduct from "../DetailProduct";
 import DetailProductModal from "../DetailProductModal";
 import Rating from "../Rating";
 
@@ -19,15 +18,15 @@ const ProductCard = ({ products }) => {
   return (
     <>
       <div className="flex">
-        <div className="grid grid-cols-1 gap-y-8 gap-x-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-2 gap-y-8 gap-x-6 lg:grid-cols-3">
           {products.map((product) => (
             <a
               key={product.id}
               onClick={() => handleProductClick(product)}
               // href={`/${product.name.toLowerCase().split(" ").join("-")}`}
-              className="group shadow-sm rounded-xl bg-textlight aspect-square hover:cursor-pointer"
+              className="group shadow-xl rounded-md sm:rounded-xl bg-textlight aspect-square hover:cursor-pointer"
             >
-              <div className="aspect-w-1 aspect-h-1 w-full overflow-hidden bg-gray-200 xl:aspect-w-7 xl:aspect-h-8 rounded-xl">
+              <div className="aspect-w-1 aspect-h-1 w-full overflow-hidden bg-gray-200 xl:aspect-w-7 xl:aspect-h-8 rounded-md sm:rounded-xl">
                 <img
                   src={product.img}
                   alt="image"
@@ -35,8 +34,10 @@ const ProductCard = ({ products }) => {
                 />
               </div>
               <div className="px-3 pb-3 ">
-                <h3 className="mt-4 text-sm text-textdark">{product.name}</h3>
-                <p className="mt-1 text-base font-bold text-textdark">
+                <h3 className="mt-4 text-sm sm:text-base font-bold text-textdark">
+                  {product.name}
+                </h3>
+                <p className="mt-1 text-sm sm:text-base font-semibold text-textdark">
                   Rp{product.price.toLocaleString("id-ID")}
                 </p>
                 <div className="flex bg-secondary w-max px-2 py-1 mt-4 rounded">

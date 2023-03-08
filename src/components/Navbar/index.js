@@ -25,8 +25,6 @@ const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
   }, []);
 
-  console.log(scrollTop);
-
   return (
     <>
       <nav

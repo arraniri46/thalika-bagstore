@@ -15,10 +15,10 @@ const Register = () => {
       </Head>
       <div className="flex flex-col w-full justify-center">
         <div className="md:absolute text-lg md:text-3xl font-bold text-textdark top-32 self-center">
-          <span className="font-bold text-2xl text-textdark">
+          <span className="font-bold text-textdark">
             <a href="/">Thalika</a>
           </span>
-          <span className="font-light text-2xl text-primary">
+          <span className="font-light text-primary">
             <a href="/">Bagstore</a>
           </span>
         </div>

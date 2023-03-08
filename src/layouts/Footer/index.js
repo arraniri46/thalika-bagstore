@@ -12,7 +12,7 @@ const Footer = () => {
                 From Work to Weekend: Find Your Perfect Bag
               </p>
             </div>
-            <div className="flex flex-col">
+            {/* <div className="flex flex-col">
               <p className="text-sm md:text-base">Payments</p>
               <ul className="flex flex-col gap-y-2 md:gap-y-4 mt-4">
                 <li>
@@ -40,8 +40,8 @@ const Footer = () => {
                   ></Image>
                 </li>
               </ul>
-            </div>
-            <div className="flex flex-col">
+            </div> */}
+            {/* <div className="flex flex-col">
               <p className="text-sm md:text-base">Shipments</p>
               <ul className="flex flex-col gap-y-2 md:gap-y-4 mt-4">
                 <li>
@@ -61,7 +61,7 @@ const Footer = () => {
                   ></Image>
                 </li>
               </ul>
-            </div>
+            </div> */}
             <div>
               <ul className="flex flex-col gap-y-2 md:gap-y-3 text-sm md:text-base">
                 <li className="text-semibold hover:underline">
