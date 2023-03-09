@@ -28,17 +28,15 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`flex h-14 w-full justify-between shadow-md items-center px-3 sticky top-0 z-10 ${
-          scrollTop >= 100
-            ? `bg-secondary border-b border-secondary/20`
-            : `bg-secondary`
+        className={`flex h-14 md:h-16 w-full justify-between items-center px-3 sticky top-0 z-10 border-b ${
+          scrollTop >= 100 ? `bg-textlight` : `bg-textlight`
         }`}
       >
         <div className="flex md:w-1/6">
-          <span className="font-bold text-xl text-textlight">
+          <span className="font-bold text-xl text-textdark">
             <a href="/">Thalika</a>
           </span>
-          <span className="font-light text-xl text-terniary">
+          <span className="font-light text-xl text-primary">
             <a href="/">Bagstore</a>
           </span>
         </div>
@@ -51,7 +49,7 @@ const Navbar = () => {
           }`}
         >
           <div className="flex">
-            <ul className="flex flex-col py-12 gap-y-4 text-lg font-medium text-secondary md:gap-x-6 md:text-textlight md:flex-row md:py-0">
+            <ul className="flex flex-col py-12 gap-y-4 text-lg font-medium text-secondary md:gap-x-6 md:flex-row md:py-0">
               <li className="hover:underline hover:text-terniary">
                 <Link href="/new-arrivals">New Arrivals</Link>
               </li>
@@ -117,7 +115,7 @@ const Navbar = () => {
             </Button>
           </Link>
 
-          <Button variant="fill" className="font-semibold px-4">
+          <Button variant="outline" className="font-semibold px-2">
             <Link href="/login">Login</Link>
           </Button>
           <Button

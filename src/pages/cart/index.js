@@ -6,7 +6,7 @@ const Cart = () => {
   return (
     <>
       <Layout title="Cart | Thalika Bagstore">
-        <div className="flex flex-col container max-w-6xl h-screen p-6">
+        <div className="flex flex-col container max-w-6xl h-max p-6">
           <h2 className="text-xl font-semibold text-secondary">
             Shopping Cart
           </h2>

@@ -13,6 +13,9 @@ const CartItem = () => {
         {[1, 2, 3].map((item, index) => (
           <div key={index} className="flex flex-col border-b pb-4 pt-2">
             <div className="flex items-center justify-between text-sm md:text-base ">
+              <div>
+                <input type="checkbox" name="item" />
+              </div>
               <div className="flex gap-x-2 items-center">
                 <img
                   src="./images/banner-2.jpg"

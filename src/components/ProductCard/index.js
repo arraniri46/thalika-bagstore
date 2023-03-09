@@ -24,7 +24,7 @@ const ProductCard = ({ products }) => {
               key={product.id}
               onClick={() => handleProductClick(product)}
               // href={`/${product.name.toLowerCase().split(" ").join("-")}`}
-              className="group shadow-xl rounded-md sm:rounded-xl bg-textlight aspect-square hover:cursor-pointer"
+              className="group shadow-md rounded-md sm:rounded-xl bg-textlight aspect-square hover:cursor-pointer"
             >
               <div className="aspect-w-1 aspect-h-1 w-full overflow-hidden bg-gray-200 xl:aspect-w-7 xl:aspect-h-8 rounded-md sm:rounded-xl">
                 <img

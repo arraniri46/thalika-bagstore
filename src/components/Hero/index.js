@@ -1,7 +1,10 @@
+import Link from "next/link";
+import Button from "../Button";
+
 const Hero = () => {
   return (
     <>
-      <div className="grid grid-cols-2 gap-4 h-52 sm:h-max">
+      <div className="grid grid-cols-2 gap-4 h-60 sm:h-max mt-4 md:mt-8">
         <div className="row-span-2 w-full relative group overflow-hidden">
           <img
             src="/images/header-image.jpg"
@@ -29,11 +32,6 @@ const Hero = () => {
             className="h-52 w-full object-cover group-hover:scale-125 duration-500"
           ></img>
         </div>
-      </div>
-      <div className="flex w-full justify-center items-center bg-secondary shadow-lg h-12 md:h-20 my-4">
-        <p className="text-base md:text-2xl font-normal text-textlight text-center">
-          'Tas Wanita untuk Setiap Moment dan Kegiatan'
-        </p>
       </div>
     </>
   );
